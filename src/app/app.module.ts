@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DtTableModule } from '@dynatrace/barista-components/table';
 import { DtExpandableSectionModule } from '@dynatrace/barista-components/expandable-section';
 import { HttpClientModule } from '@angular/common/http';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
     declarations: [
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
         DtIconModule.forRoot({ svgIconLocation: '/assets/icons/{{name}}.svg' }),
         DtTableModule,
         DtExpandableSectionModule,
-        HttpClientModule
+        HttpClientModule,
+        MatExpansionModule
     ],
     providers: [],
     bootstrap: [AppComponent]
